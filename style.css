@@ -1,18 +1,67 @@
 
+/* 
+
+color blue-dark - #00002b 
+color blue-light - #d2d2ff
+
+*/
+
 body {
     display: flex;
     justify-content: center;
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(#d2d2ff, #00002b);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #main {
     width: 600px;
-    text-align: center;
+    border: 3px solid #00002b;
+    border-radius: 8px;
+    padding: 4px 8px;
 }
 
 #title {
-    border: 1px solid red;
+    
 }
 
 #list {
-    border: 1px solid green;
+    border-top: 1px solid #00002b ;
+}
+
+h2 {
+    text-align: center;
+    color: #00002b;
+    
+}
+
+#input-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#task-input {
+    width: 400px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid;
+}
+
+#list-box {
+    margin-top: 20px;
+    font-size: 16px;
+    border-top: 1px solid #00002b ;
+}
+
+button {
+    font-size: 16px;
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+
+li {
+    
 }
