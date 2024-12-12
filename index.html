@@ -12,16 +12,20 @@
 <body>
     <div id="main">
         <div id="title">
-            <h2>TO DO LIST</h2>
+            <h1>TO DO LIST</h1>
         </div>
         <div id="list">
             <div id="input-box">
-                <input id="task-input" type="text">
-                <button id="add-btn">Add task</button>
+                <div>
+                    <label for="task-input">Write your task</label>
+                    <input id="task-input" type="text" placeholder="Do the dishes">
+                </div>
+                <button id="add-btn" onclick="addTask()">ADD TASK</button>
             </div>
             <div id="list-box">
-                <ol>
-                    <li>Uczyć się przez 2h <button>X</button></li>
+                <ol id="task-list">
+                    <li>Uczyć się przez 2h <button id="delete-btn">DELETE TASK</button></li>
+                    <li>Dodać skryptowanie <button id="delete-btn">DELETE TASK</button></li>
                 </ol>
             </div>
         </div>
