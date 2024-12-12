@@ -9,7 +9,7 @@ color blue-light - #d2d2ff
 body {
     display: flex;
     justify-content: center;
-    font-family: "Roboto", sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: linear-gradient(#d2d2ff, #00002b);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -30,7 +30,7 @@ body {
     border-top: 1px solid #00002b ;
 }
 
-h2 {
+h1 {
     text-align: center;
     color: #00002b;
     
@@ -39,7 +39,7 @@ h2 {
 #input-box {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items:end;
     margin: 20px 0;
 }
 
@@ -52,16 +52,28 @@ h2 {
 
 #list-box {
     margin-top: 20px;
-    font-size: 16px;
+    font-size: 1rem;
     border-top: 1px solid #00002b ;
 }
 
 button {
-    font-size: 16px;
-    padding: 4px 12px;
-    border-radius: 4px;
+    font-size: 1rem;
+    padding: 4px 16px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+#add-btn {
+    width: 135px;
+    background-color: rgb(163, 252, 163);
+}
+
+#delete-btn {
+    background-color: rgb(248, 118, 118);
 }
 
 li {
-    
+    margin-bottom: 8px;
 }
