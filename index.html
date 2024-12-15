@@ -10,24 +10,33 @@
 <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="main">
-        <div id="title">
+    <header>
+        <div class="container" id="title">
             <h1>TO DO LIST</h1>
         </div>
-        <div id="list">
-            <div id="input-box">
+    </header>
+    <main>
+        <section id="write-task">
+            <div class="container input-box">
                 <div>
-                    <label for="task-input">Write your task</label>
+                    <label for="task-input">Write your task:</label>                    
                     <input id="task-input" type="text" placeholder="Do the dishes">
                 </div>
-                <button id="add-btn" onclick="addTask()">ADD TASK</button>
-            </div>
-            <div id="list-box">
+                    <button id="add-btn" onclick="addTask()">ADD TASK</button>
+            </div>    
+        </section>
+        <section id="list-box">
+            <div class="container">
                 <ol id="task-list">
+                    <li>
+                        <p>Przykładowe zadanie</p>
+                        <input type="checkbox" name="done" id="checkbox">
+                        <button class="delete-btn">DELETE</button>
+                    </li>
                 </ol>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 
     <script src="script.js"></script>
 </body>
